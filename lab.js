@@ -275,9 +275,31 @@ myWizard.castSpell()
     to be newPrice.
 */
 
-//Code Here
+class Phone {
+  constructor(brand, model, storage, color, price) {
+  this.brand = brand;
+  this.model = model;
+  this.storage = storage;
+  this.color = color;
+  this.price = price;
+  this.sold = false;
+  }
+  sell() {
+    if(this.sold === false) {
+      this.sold = true
+      console.log(this.brand, this.model, 'has been sold.')
+      console.log(this.sold)
+    }
+  }
+  changePrice(newPrice) {
+    this.price = newPrice
+    console.log(this.price)
+    }
+  } 
 
-  
+// let pixel = new Phone('google', 'pixel', '64gb', 'white', 650)  
+// pixel.changePrice()
+
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -288,7 +310,9 @@ myWizard.castSpell()
     - price: number
 */
 
-//Code Here
+let phone1 = new Phone('google', 'pixel', 64, 'white', 650) 
+let phone2 = new Phone('samsung', 'galaxy', 120, 'black', 899)
+let phone3 = new Phone('LG', 'V30', 160, "gray", 1000)
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -297,7 +321,7 @@ myWizard.castSpell()
   Then console.log that object to see the price change
 */ 
 
-//Code Here 
+phone1.changePrice(500)
 
 
 /*
@@ -306,7 +330,8 @@ myWizard.castSpell()
   Print the value of that phone's sell property to make sure it's been changed to true
 */
 
-//Code Here 
+phone2.sell()
+phone3.sell()
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////

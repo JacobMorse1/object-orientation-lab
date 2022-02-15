@@ -398,14 +398,25 @@ let helensInfo = {...contactInfo, ...shippingInfo}
   And finally, print the value of the mileage.
 */
 
-//Code Here 
+class Vehicle {
+  constructor(capacity, color, mileage) {
+    this.capacity = capacity
+    this.color = color
+    this.mileage = mileage
+  }
+  move (miles) {
+    let totalMiles = this.mileage + miles
+    console.log(totalMiles)
+  }
+}
 
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
 
-//Code Here
+let myFirstVehicle = new Vehicle(5, 'black', 200)
+// myFirstVehicle.move(500)
 
 
 /* 
@@ -416,17 +427,25 @@ let helensInfo = {...contactInfo, ...shippingInfo}
   new ones: make and isCool. (Hint: don't forget to call the super function)
 */
 
-//Code Here
+class Motorcycle extends Vehicle {
+  constructor(capacity, color, mileage, make, isCool) {
+    super(capacity, color, mileage)
+    this.make = make 
+    this.isCool = true
+  }
+}
 
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
-//Code Here 
+let myFirstMotorcycle = new Motorcycle(1, 'black', 60, 'Harley Davidson')
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
+
+myFirstMotorcycle.move(40)
 
 /*
   Let's make another class based off of Vehicle. 

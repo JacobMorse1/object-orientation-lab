@@ -159,9 +159,24 @@ let bigFour = totalPopulation(states)
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+const foods = {
+  carb: 'pasta',
+  fat: 'burger',
+  protein: 'meat'
+}
 
+function ingredients(foods) {
+  let {carb, fat, protein} = foods
+  let foodarr = []
+  for (let prop in foods) {
+    foodarr.push(prop) 
+    // console.log(foodarr) 
+  }
+  return foodarr
+}
 
+let list = ingredients(foods)
+console.log(list)
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.

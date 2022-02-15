@@ -48,22 +48,32 @@ console.log(dog ['color'])
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-
-
+const favoriteThings = {
+  band: 'Death Cab for Cutie',
+  food: 'Thai Curry Chicken',
+  person: 'My Mom',
+  book: 'The Name of the Wind',
+  movie: 'The Secret Life of Walter Mitty',
+  holiday: 'The 4th of July'
+}
+// console.log(favoriteThings)
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
-//Code here
-
+favoriteThings.car = '1970 Stingray Corvette'
+favoriteThings.show = 'The Office'
+// console.log(favoriteThings)
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
-//Code here
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
+// console.log(favoriteThings)
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////

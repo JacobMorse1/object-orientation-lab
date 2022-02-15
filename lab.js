@@ -4,7 +4,11 @@
   Give it a key of name with the value being your name, and another key of age with the value being your age.
 */
 
-//Code here
+const me = {
+  name: 'Jake Morse',
+  age: 28
+}
+// console.log(me ['name', 'age'])
 
 
 
@@ -15,21 +19,26 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy/goodGirl (a boolean).
 
-//Code here
+const dog = {
+  name: 'duke',
+  color: 'red',
+  age: 28,
+  goodBoy: false
+}
 
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
-//Code here
+console.log(dog.name)
 
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
-//Code here
+console.log(dog ['color'])
 
 
 
@@ -39,7 +48,7 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+
 
 
 /*

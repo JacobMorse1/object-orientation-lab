@@ -112,7 +112,7 @@ const obj = {
 
 function greeting( obj ) {
   let {firstName, lastName, title} = obj
-  console.log(firstName, lastName, title)
+  // console.log(firstName, lastName, title)
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -129,11 +129,25 @@ let hello = greeting(obj)
   The property values will be numbers.
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
-*/
+  */
+ 
+ const states = {
+   utah: 25,
+   california: 50,
+   texas: 22,
+   arizona: 20
+ }
 
-//Code Here
+function totalPopulation(states) {
+  let {utah, california, texas, arizona} = states
+  let sum = utah + california + texas + arizona
+
+  return sum
+}
 
 
+let bigFour = totalPopulation(states)
+// console.log(bigFour)
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 

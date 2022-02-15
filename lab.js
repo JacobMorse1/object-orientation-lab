@@ -350,7 +350,8 @@ const colors = {
 }
 //do not edit this object
 
-//Code Here 
+let colorsCopy = {...colors}
+// console.log(colorsCopy)
 
 
 
@@ -378,7 +379,8 @@ const shippingInfo = {
 }
 //do not edit the objects above
 
-//Code Here
+let helensInfo = {...contactInfo, ...shippingInfo}
+// console.log(helensInfo)
 
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.

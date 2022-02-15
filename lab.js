@@ -176,7 +176,7 @@ function ingredients(foods) {
 }
 
 let list = ingredients(foods)
-console.log(list)
+// console.log(list)
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -196,7 +196,9 @@ var user = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user.name = 'Bryan G. Smith'
+user.email = 'bryan.smith@devmounta.in'
+// console.log(user)
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -204,7 +206,8 @@ var user = {
   Using the user object above, delete the users age off of the object.
 */
 
-//Code Here
+delete user.age 
+// console.log(user)
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
@@ -214,8 +217,16 @@ var user = {
   Print the name of your cat instance using dot notation.
 */
 
-//Code here
+class Cat {
+  constructor(name, age, color) {
+  this.name = name
+  this.age = age
+  this.color = color
+  }
+}
 
+let cat1 = new Cat('Josie', 5, 'black')
+// console.log(cat1.name)
 
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
@@ -226,7 +237,20 @@ var user = {
   Call the castSpell function on the instance of your wizard.
 */
 
-//Code here
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name
+    this.age = age
+    this.favoriteSpell = favoriteSpell
+  }
+  castSpell(){
+    console.log(this.name, 'has cast', this.favoriteSpell)
+  }
+}
+
+let myWizard = new Wizard('Gandalf', 24000, 'YOU SHALL NOT PASS!!!')
+
+myWizard.castSpell()
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*

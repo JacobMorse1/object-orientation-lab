@@ -468,7 +468,7 @@ class Boat extends Vehicle {
     super(capacity, color, mileage)
     this.name = name
     this.type = type
-    this.isSeaworthy = true
+    this.isSeaworthy = isSeaworthy
   }
   checkSeaWorthiness() {
     if(this.isSeaworthy === true) {
@@ -490,22 +490,22 @@ class Boat extends Vehicle {
   properties except isSeaworthy -- make that one false. Call your variable myFirstBoat.
 */
 
-//Code Here
+let myFirstBoat = new Boat(10, 'Purple', 3500, 'Ye Old Skipper', 'fishing boat', false)
 
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
-//Code Here
+myFirstBoat.checkSeaWorthiness()
 
 /*
   Now run the performMaintenance method on your boat
 */
 
-//Code Here 
+myFirstBoat.performMaintenance()
 
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
-//Code Here
+myFirstBoat.checkSeaWorthiness()
